@@ -20,7 +20,7 @@ const ListedBook = () => {
   const Assending = (ids) => {
     
     let data = [...books];
-    if(ids === 'Rating'){
+    if(ids === 'rating'){
       
       let result = data.sort((a, b) => {
         const rating1 = a.rating.toString();
@@ -38,7 +38,7 @@ const ListedBook = () => {
     )
     return result;
   }
-  if(ids === 'Total Pages'){
+  if(ids === 'totalPages'){
       
       let result = data.sort((a, b) => {
         const rating1 = a.totalPages.toString();
@@ -56,7 +56,7 @@ const ListedBook = () => {
     )
     return result;
   }
-  if(ids === 'Year Of Publishing'){
+  if(ids === 'yearOfPublishing'){
       
       let result = data.sort((a, b) => {
         const rating1 = a.yearOfPublishing.toString();
@@ -90,9 +90,9 @@ const ListedBook = () => {
   }
 
   const options = [
-    { value: 'rating', label: 'Rating' },
-    { value: 'totalPages', label: 'Total Pages' },
-    { value: 'yearOfPublishing', label: 'Year Of Publishing' }
+    { value: 'rating', label: 'rating' },
+    { value: 'totalPages', label: 'totalPages' },
+    { value: 'yearOfPublishing', label: 'yearOfPublishing' }
   ]
 
   

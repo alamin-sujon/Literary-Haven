@@ -13,6 +13,8 @@ import PageReaded from './Components/PageReaded.jsx';
 import BookDetails from './Components/BookDetails.jsx';
 
 import ErrorPage from './Components/ErrorPage.jsx';
+import Blog from './Components/Blog.jsx';
+import AboutUs from './Components/AboutUs.jsx';
 
 
 
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
         path: '/book/:bookId',
         element: <BookDetails></BookDetails>
       },
+      {
+        path: '/blog',
+        element: <Blog></Blog>
+      },
+      {
+        path: '/about',
+        element: <AboutUs></AboutUs>
+      }
    
     ]
   }

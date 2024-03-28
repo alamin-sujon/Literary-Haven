@@ -26,11 +26,13 @@ const Nav = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/lists">Listed Books</NavLink>
+            <NavLink to="/list">Listed Books</NavLink>
             <NavLink to="/read">Pages to Read</NavLink>
+            <NavLink to="/blog">Blog</NavLink>
+            <NavLink to="/about">About Us</NavLink>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">BookStore</a>
+        <a className="btn btn-ghost text-xl">Literary Haven</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex gap-6 items-center">
@@ -42,6 +44,12 @@ const Nav = () => {
           </NavLink>
           <NavLink className={"text-lg"} to="/read">
             Pages to Read
+          </NavLink>
+          <NavLink className={"text-lg"} to="/blog">
+            Blog
+          </NavLink>
+          <NavLink className={"text-lg"} to="/about">
+            About Us
           </NavLink>
         </ul>
       </div>
